@@ -35,8 +35,6 @@ header {
   width: 100%;
 }
 
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
@@ -142,9 +140,7 @@ nav a:hover {
   }
   
   nav {
-    // all: unset; /* this causes issues with Edge, since it's unsupported */
-    
-    /* the following lines are not from my video, but add Edge support */
+    all: unset;
     position: relative;
     text-align: left;
     transition: none;
@@ -152,8 +148,6 @@ nav a:hover {
     background: none;
     top: initial;
     left: initial;
-    /* end Edge support stuff */
-    
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
