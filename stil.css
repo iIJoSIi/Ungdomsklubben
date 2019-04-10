@@ -1,0 +1,32 @@
+h1 {
+  background-color: rgb(17, 75, 95);
+  padding: 20px;
+  text-align: center;
+  height: auto;
+  display: block;
+}
+/*Lager en block rundt listen*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+/* displayer blocken jeg lagde oppe og lager luft mellom ordene og endrer farge på tekst */
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* bytter link navn når man har musepekeren over */
+li a:hover {
+  background-color: rgb(69, 75, 102);
+  color: rgb(69, 75, 102);
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(69, 75, 102);
+  color: white;
+}
