@@ -1,9 +1,18 @@
-h1 {
-  background-color: rgb(17, 75, 95);
-  padding: 20px;
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+header {
+  background-color: rgba(39, 39, 39, 1);
   text-align: center;
-  height: auto;
+  color: white;
   display: block;
+  font-family: 'Work Sans';
+  padding: 20px;
+
+}
+body {
+  margin: 0;
+  background-color: rgba(17, 17, 17, 1);
+
 }
 /*Lager en block rundt listen*/
 ul {
@@ -11,22 +20,48 @@ ul {
   margin: 0;
   padding: 0;
   width: 400px;
+  font-family:'work Sans'
 }
+
 /* displayer blocken jeg lagde oppe og lager luft mellom ordene og endrer farge på tekst */
 li a {
   display: block;
-  color: black;
+  color: white;
   padding: 8px 16px;
   text-decoration: none;
 }
 
 /* bytter link navn når man har musepekeren over */
 li a:hover {
-  background-color: rgb(69, 75, 102);
-  color: rgb(69, 75, 102);
+  background-color: white;
+  color: white;
 }
 
 li a:hover:not(.active) {
-  background-color: rgb(69, 75, 102);
+  background-color: rgba(39, 39, 39, 1);
   color: white;
+}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
 }
